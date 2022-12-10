@@ -8,7 +8,22 @@ Module.register("EXT-Keyboard", {
   defaults: {
     debug: false,
     keyFinder: false,
-    keys: []
+    keys: [
+      {
+        keyCode: 107,
+        notification: "EXT_VOLUME-SPEAKER_UP",
+        payload: null,
+        command: null,
+        sound: "up"
+      },
+      {
+        keyCode: 109,
+        notification: "EXT_VOLUME-SPEAKER_DOWN",
+        payload: null,
+        command: null,
+        sound: "down"
+      }
+    ]
   },
 
   start: function() {
