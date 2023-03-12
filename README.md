@@ -2,9 +2,9 @@
 
 This plugin allows to control your mirror with a keyboard.
 
-This plugin is an Extented plugins for `MMM-GoogleAssistant` v4.x
+This plugin is an Extented plugins for `MMM-GoogleAssistant` v5.x
 
-Naturally, you can use this EXT plugin with or without out `MMM-GoogleAssistant` v4.x
+Naturally, you can use this EXT plugin with or without out `MMM-GoogleAssistant` v5.x
 
 ## Installation / update / configuration
 
