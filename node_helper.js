@@ -1,7 +1,7 @@
 /**********************
-*  EXT-Keyboard v1.0  *
+*  EXT-Keyboard v1.1  *
 *  Bugsounet          *
-*  11/2022            *
+*  03/2023            *
 ***********************/
 
 const exec = require("child_process").exec
