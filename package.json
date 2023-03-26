@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://forum.bugsounet.fr"
   },
-  "homepage": "https://wiki.bugsounet.fr"
+  "homepage": "https://wiki.bugsounet.fr",
+  "dependencies": {
+    "check-node-version": "^4.2.1",
+    "glob": "^9.3.2",
+    "minify": "^9.2.0"
+  }
 }
