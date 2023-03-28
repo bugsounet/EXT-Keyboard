@@ -52,7 +52,7 @@ if  [ "$platform" == "osx" ]; then
   echo
   exit 255
 else
-  if  [ "$os_name" == "raspbian" ] && [ "$os_version" -lt 10 ]; then
+  if  [ "$os_name" == "raspbian" ] && [ "$os_version" -lt 11 ]; then
     Installer_error "OS Detected: $OSTYPE ($os_name $os_version $arch)"
     Installer_error "Unfortunately, this module is not compatible with your OS"
     Installer_error "Try to update your OS to the lasted version of raspbian"
@@ -62,13 +62,6 @@ else
     Installer_success "OS Detected: $OSTYPE ($os_name $os_version $arch)"
   fi
 fi
-
-echo
-# check dependencies
-#dependencies=()
-#Installer_info "Checking all dependencies..."
-#Installer_update_dependencies
-#Installer_success "All Dependencies needed are installed !"
 
 echo
 Installer_info "Installing all npm libraries..."

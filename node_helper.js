@@ -1,7 +1,7 @@
 /**********************
-*  EXT-Keyboard v1.0  *
+*  EXT-Keyboard v1.1  *
 *  Bugsounet          *
-*  11/2022            *
+*  03/2023            *
 ***********************/
 
 const exec = require("child_process").exec
@@ -15,9 +15,7 @@ module.exports = NodeHelper.create({
   initialize: function(payload) {
     console.log("[KEYBOARD] EXT-Keyboard Version:", require('./package.json').version, "rev:", require('./package.json').rev)
     this.config = payload
-    if (this.config.debug) {
-      log = (...args) => { console.log("[KEYBOARD]", ...args) }
-    }
+    if (this.config.debug) log = (...args) => { console.log("[KEYBOARD]", ...args) }
     if (this.config.keys.length && Array.isArray(this.config.keys)) {
       log("keys:", this.config.keys)
     } else { 

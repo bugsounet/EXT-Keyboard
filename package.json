@@ -1,13 +1,15 @@
 {
   "name": "EXT-Keyboard",
-  "version": "1.0.1",
-  "rev": "230312",
+  "version": "1.1.0",
+  "rev": "230326",
   "description": "Keybord plugin",
   "main": "EXT-Keyboard.js",
   "scripts": {
     "preinstall": "installer/preinstall.sh",
     "postinstall": "installer/postinstall.sh",
-    "update": "installer/update.sh"
+    "update": "installer/update.sh",
+    "reset": "git reset --hard",
+    "clean": "rm -rf node_modules package-lock.json"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://forum.bugsounet.fr"
   },
-  "homepage": "https://wiki.bugsounet.fr"
+  "homepage": "https://wiki.bugsounet.fr",
+  "dependencies": {
+    "check-node-version": "^4.2.1",
+    "glob": "^9.3.2",
+    "minify": "^9.2.0"
+  }
 }
