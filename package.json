@@ -1,7 +1,7 @@
 {
   "name": "EXT-Keyboard",
-  "version": "1.1.0",
-  "rev": "230326",
+  "version": "1.1.1",
+  "rev": "230722",
   "description": "Keybord plugin",
   "main": "EXT-Keyboard.js",
   "scripts": {
@@ -24,8 +24,7 @@
   },
   "homepage": "https://wiki.bugsounet.fr",
   "dependencies": {
-    "check-node-version": "^4.2.1",
-    "glob": "^9.3.2",
-    "minify": "^9.2.0"
+    "esbuild": "^0.18.15",
+    "glob": "^10.3.3"
   }
 }
