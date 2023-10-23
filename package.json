@@ -24,7 +24,7 @@
   },
   "homepage": "https://wiki.bugsounet.fr",
   "dependencies": {
-    "esbuild": "^0.19.3",
+    "esbuild": "^0.19.5",
     "glob": "^10.3.7"
   }
 }
