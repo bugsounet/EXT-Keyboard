@@ -19,6 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/bugsounet/EXT-Keyboard"
   },
+  "keywords": [
+    "magic mirror",
+    "module",
+    "keyboard"
+  ],
   "authors": [
     "bugsounet"
   ],
@@ -26,7 +31,7 @@
   "bugs": {
     "url": "https://forum.bugsounet.fr"
   },
-  "homepage": "https://wiki.bugsounet.fr",
+  "homepage": "https://wiki.bugsounet.fr/en/EXT-Keyboard",
   "dependencies": {
     "esbuild": "^0.20.1",
     "glob": "^10.3.7"
