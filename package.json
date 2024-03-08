@@ -1,7 +1,7 @@
 {
   "name": "EXT-Keyboard",
-  "version": "1.3.0",
-  "rev": "240225",
+  "version": "1.3.1",
+  "rev": "240308",
   "description": "Keybord plugin",
   "main": "EXT-Keyboard.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "url": "git+https://github.com/bugsounet/EXT-Keyboard"
   },
   "keywords": [
+    "MMM-GoogleAssistant",
     "magic mirror",
     "module",
     "keyboard"
@@ -34,11 +35,11 @@
   "homepage": "https://wiki.bugsounet.fr/en/EXT-Keyboard",
   "dependencies": {
     "esbuild": "^0.20.1",
-    "glob": "^10.3.7"
+    "glob": "^10.3.10"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.0",
-    "@stylistic/eslint-plugin": "^1.6.2",
+    "@stylistic/eslint-plugin": "^1.6.3",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1"
   }
