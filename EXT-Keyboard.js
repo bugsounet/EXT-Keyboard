@@ -39,7 +39,7 @@ Module.register("EXT-Keyboard", {
 
   notificationReceived (noti, payload, sender) {
     switch(noti) {
-      case "GW_READY":
+      case "GA_READY":
         if (sender.name === "MMM-GoogleAssistant") {
           this.sendSocketNotification("INIT", this.config);
           this.prepare();
