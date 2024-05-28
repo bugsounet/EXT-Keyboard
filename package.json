@@ -34,7 +34,7 @@
   },
   "homepage": "https://wiki.bugsounet.fr/en/EXT-Keyboard",
   "dependencies": {
-    "esbuild": "^0.21.3",
+    "esbuild": "^0.21.4",
     "glob": "^10.3.15"
   },
   "devDependencies": {
