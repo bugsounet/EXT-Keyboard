@@ -52,7 +52,7 @@ Module.register("EXT-Keyboard", {
   socketNotificationReceived (noti, payload) {
     switch(noti) {
       case "WARNING":
-        this.sendNotification("EXT_ALERT", {
+        this.sendNotification("GA_ALERT", {
           type: "warning",
           message: payload.message,
           sound: `${this.resources}keyboard.mp3`
@@ -66,7 +66,7 @@ Module.register("EXT-Keyboard", {
     this.audio.autoplay = true;
     onkeydown = (event) => {
       if (this.config.keyFinder) {
-        this.sendNotification("EXT_ALERT", {
+        this.sendNotification("GA_ALERT", {
           type: "information",
           message: `You pressed: ${event.key === " " ? "Space" : event.key}. keyCode is: ${event.keyCode}`,
           timer: 3000,
