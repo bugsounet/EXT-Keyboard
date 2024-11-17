@@ -38,7 +38,7 @@ Module.register("EXT-Keyboard", {
   },
 
   notificationReceived (noti, payload, sender) {
-    switch(noti) {
+    switch (noti) {
       case "GA_READY":
         if (sender.name === "MMM-GoogleAssistant") {
           this.sendSocketNotification("INIT", this.config);
@@ -50,7 +50,7 @@ Module.register("EXT-Keyboard", {
   },
 
   socketNotificationReceived (noti, payload) {
-    switch(noti) {
+    switch (noti) {
       case "WARNING":
         this.sendNotification("GA_ALERT", {
           type: "warning",
@@ -74,7 +74,7 @@ Module.register("EXT-Keyboard", {
         });
       }
       if (this.config.keys.length && Array.isArray(this.config.keys)) {
-        this.config.keys.forEach( (key) => {
+        this.config.keys.forEach((key) => {
           if (key.keyCode === event.keyCode) {
             if (key.notification) this.sendNotification(key.notification, key.payload || undefined);
             if (key.command) this.sendSocketNotification("SHELLEXEC", key.command);
