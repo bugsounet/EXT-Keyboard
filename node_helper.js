@@ -18,9 +18,9 @@ module.exports = NodeHelper.create({
     if (this.config.debug) log = (...args) => { console.log("[KEYBOARD]", ...args); };
     if (this.config.keys.length && Array.isArray(this.config.keys)) {
       log("keys:", this.config.keys);
-    } else { 
+    } else {
       console.log("[KEYBOARD] No keys found in config!");
-      this.sendSocketNotification("WARNING", { message: "No keys found in config!" } );
+      this.sendSocketNotification("WARNING", { message: "No keys found in config!" });
     }
   },
 
@@ -30,17 +30,17 @@ module.exports = NodeHelper.create({
         this.initialize(payload);
         break;
       case "SHELLEXEC":
-        let cwdPath = path.resolve(__dirname, "scripts/");
+        var cwdPath = path.resolve(__dirname, "scripts/");
         var command = payload;
         if (!command) {
-          this.sendSocketNotification("WARNING", { message: "ShellExec: no command to execute!" } );
+          this.sendSocketNotification("WARNING", { message: "ShellExec: no command to execute!" });
           return console.log("[KEYBOARD] ShellExec: no command to execute!");
         }
-        exec (command, { cwd: cwdPath }, (e,so,se)=> {
+        exec(command, { cwd: cwdPath }, (e, so, se) => {
           log("ShellExec command:", command);
           if (e) {
-            console.log(`[KEYBOARD] ShellExec Error:${  e}`);
-            this.sendSocketNotification("WARNING", { message: "ShellExec: execute Error !" } );
+            console.log(`[KEYBOARD] ShellExec Error:${e}`);
+            this.sendSocketNotification("WARNING", { message: "ShellExec: execute Error !" });
           }
 
           log("SHELLEXEC_RESULT", {
