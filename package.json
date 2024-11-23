@@ -1,7 +1,7 @@
 {
   "name": "EXT-Keyboard",
   "version": "1.5.1",
-  "rev": "241117",
+  "rev": "241123",
   "description": "Keybord plugin",
   "main": "EXT-Keyboard.js",
   "scripts": {
